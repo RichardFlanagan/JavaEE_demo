@@ -1,0 +1,32 @@
+DROP TABLE books;
+DROP TABLE authors;
+DROP TABLE publishers;
+
+CREATE TABLE books(
+    id INTEGER NOT NULL IDENTITY,
+    title VARCHAR(255) NOT NULL,
+    year INTEGER NOT NULL,
+	author INTEGER NOT NULL,
+	publisher INTEGER NOT NULL
+);
+CREATE TABLE authors(
+    id INTEGER NOT NULL IDENTITY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL
+);
+CREATE TABLE publishers(
+    id INTEGER NOT NULL IDENTITY,
+    name VARCHAR(255) NOT NULL
+);
+
+INSERT INTO authors (first_name, last_name) VALUES ('a', 'aaa');
+INSERT INTO authors (first_name, last_name) VALUES ('b', 'bbb');
+INSERT INTO authors (first_name, last_name) VALUES ('c', 'ccc');
+
+INSERT INTO publishers (name) VALUES ('xxx Inc.');
+INSERT INTO publishers (name) VALUES ('yyy Corp.');
+INSERT INTO publishers (name) VALUES ('zzz Co.');
+
+INSERT INTO books (title, year, author, publisher) VALUES ('a', 2000, 0, 0);
+INSERT INTO books (title, year, author, publisher) VALUES ('b', 2001, 1, 1);
+INSERT INTO books (title, year, author, publisher) VALUES ('c', 2002, 2, 2);
