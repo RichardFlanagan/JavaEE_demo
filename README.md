@@ -18,4 +18,4 @@ To operate the system (using the zip file package):
 4. The root URL is: http://localhost:8080/A00193644_RichardFlanagan/library
 
 
-![alt tag](http://imgur.com/244sgHq)
+![alt tag](http://imgur.com/244sgHq.png)
